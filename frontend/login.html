@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Library Login</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body class="login-bg">
+
+    <!-- Background Overlay -->
+    <div class="login-overlay">
+        <div class="login-container">
+
+            <!-- LEFT SIDE TEXT -->
+            <div class="login-info">
+                <h1>Welcome to the Library<br>System</h1>
+                <p>Log in to continue…</p>
+            </div>
+
+            <!-- LOGIN BOX -->
+            <div class="login-box">
+                <h2>Log in</h2>
+
+                <!-- USERNAME -->
+                <div class="input-box">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter username">
+                </div>
+
+                <!-- PASSWORD -->
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                </div>
+
+                <!-- LOGIN BUTTON (NO onclick here) -->
+                <button class="login-btn" id="loginBtn">
+                    Log in »
+                </button>
+                <p id="loginMessage" class="login-message"></p>
+                <div id="loader" class="loader"></div>
+
+
+
+                <!-- SIGNUP TEXT -->
+                <p class="signup-text">
+                    Don’t have an account?
+                    <a href="#">Sign up now</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

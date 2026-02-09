@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Books | Digital Library</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<!-- BOOK DETAILS MODAL -->
+<div id="bookModal" class="modal">
+    <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+        <p><strong>Category:</strong> <span id="modalCategory"></span></p>
+        <p id="modalDescription"></p>
+    </div>
+</div>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-book-open"></i>
+            <span>My Library</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li id="userArea">
+                <a href="login.html">Login</a>
+            </li>
+        </ul>
+
+        <button id="themeToggle">🌙</button>
+    </nav>
+
+    <!-- PAGE TITLE -->
+    <section class="page-title">
+        <h1>Available Books</h1>
+        <p>Browse our collection</p>
+    </section>
+
+    <!-- SEARCH & FILTER -->
+    <section class="book-controls">
+        <input type="text" id="searchInput" placeholder="Search books...">
+
+        <select id="categoryFilter">
+            <option value="all">All</option>
+            <option value="science">Science</option>
+            <option value="technology">Technology</option>
+            <option value="literature">Literature</option>
+        </select>
+    </section>
+
+    <!-- BOOKS GRID (JS WILL FILL THIS) -->
+    <section class="books-section">
+        <div class="books-grid" id="booksGrid"></div>
+    </section>
+
+    <!-- BOOK DETAILS MODAL -->
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p><strong>Author:</strong> <span id="modalAuthor"></span></p>
+            <p><strong>Category:</strong> <span id="modalCategory"></span></p>
+            <p id="resultInfo" class="result-info"></p>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
